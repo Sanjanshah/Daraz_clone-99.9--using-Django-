@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz Clone | {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-web">
+            <!-- Top NavBar -->
+            <div class="nav-top-info">
+                <div class="nav-top-links">
+                    <a href="#" class="nav-link">Become A Seller</a>
+                    <div class="link">
+                        <a href="#" class="nav-link">Daraz Affiliate Program</a>
+                    </div>
+
+                    <!-- NavLink Dropdown -->
+                    <div class="link" id="help-nav-link">
+                        <a href="#" class="nav-link">Help & Support</a>
+                        <div id="nav-help-dropdown">
+                            <div id="nav-triangle"></div>
+                            <div class="help-container">
+                                <!-- Dropdown content same as original -->
+                                <div class="nav-list-ele">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <a>Help Center</a>
+                                </div>
+                                <div class="nav-list-ele">
+                                    <i class="fa-brands fa-rocketchat"></i>
+                                    <a>Chat with Us</a>
+                                </div>
+                                <div class="nav-list-ele">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <a>Order</a>
+                                </div>
+                                <div class="nav-list-ele">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    <a>Shipping & Delivery</a>
+                                </div>
+                                <div class="nav-list-ele">
+                                    <i class="fa-solid fa-money-bill"></i>.
+                                    <a>Payment</a>
+                                </div>
+                                <div class="nav-list-ele">
+                                    <i class="fa-solid fa-money-check-dollar"></i>
+                                    <a>Returns & Refunds</a>
+                                </div>
+                                <div class="nav-list-ele">
+                                    <i class="fa-solid fa-shield-heart"></i>
+                                    <a>Purchase Protection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">Daraz Logistics Partner</a>
+                </div>
+            </div>
+
+       
+            {% comment %} help and support end here {% endcomment %}
+
+            <!-- NavBar Elements -->
+            <div class="outer-nav-bottom-info">
+                <div class="inner-nav-bottom-info">
+                    <div class="nav-logo">
+                        <div class="daraz-logo" style="background-image: url('{% static 'images/NavBar/daraz-logo.png' %}')"></div>
+                    </div>
+                    <div class="search-bar">
+                        <input placeholder="Search in Daraz" class="search">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <!-- Rest of nav elements same as original -->
+
+                    <div class="user-login select-ele">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ele-text">Login</span>
+                    </div>
+                    <div class="nav-hr">
+                        <span class="ele-text">|</span>
+                    </div>
+                    <div class="sign-up select-ele">
+                        <span class="ele-text">Sign Up</span>
+                    </div>
+                    <div class="lang-select select-ele">
+                        <i class="fa-solid fa-globe"></i>
+                        <span class="lang-select-text">EN</span>
+                    </div>
+                    <div class="cart select-ele">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+<div class="hero-section">
+
+    <!-- Image Slider -->
+    <div id="slider">
+        <figure>
+            <img src="{% static 'images/Hero Main/hero-section.jpg' %}" alt="Hero Image 1">
+            <img src="{% static 'images/Hero Main/hero-section2.jpg' %}" alt="Hero Image 2">
+            <img src="{% static 'images/Hero Main/hero-section3.jpg' %}" alt="Hero Image 3">
+            <img src="{% static 'images/Hero Main/hero-section4.jpg' %}" alt="Hero Image 4">
+            <img src="{% static 'images/Hero Main/hero-section.jpg' %}" alt="Hero Image 1 Duplicate">
+        </figure>
+    </div>
+</div>
+            
+
+    {% block content %} 
+    
+    {% endblock %}
+
+    <footer>
+        <div class="mainfooter">
+            <div class="footpanel">
+                <!-- All footer sections same as original -->
+                 <!-- Footer Panel 1 -->
+                <div class="foot-section1">
+                    <h4>Customer Care</h4>
+                    <a>Help Center</a>
+                    <a>How to Buy</a>
+                    <a>Corporate & Bulk Purchasing</a>
+                    <a>Returns & Refunds</a>
+                    <a>Daraz Shop</a>
+                    <a>Contact Us</a>
+                    <a>Purchase Protection</a>
+                    <a>Daraz Pick up Points</a>
+                    <h4>Make Money With Us</h4>
+                    <a>Daraz University</a>
+                    <a>Sell on Daraz</a>
+                    <a>Join Daraz Affiliate Program</a>
+                </div>
+                <!-- Footer Panel 2 -->
+                <div class="foot-section2">
+                    <h4>Daraz</h4>
+                    <a>About Us</a>
+                    <a>Digital Payments</a>
+                    <a>Daraz Donates</a>
+                    <a>Daraz Blog</a>
+                    <a>Terms & Conditions</a>
+                    <a>Privacy Policy</a>
+                    <a>NTN Number : 4012118-6</a>
+                    <a>STRN Number : 1700401211818</a>
+                    <a>Online Shopping App</a>
+                    <a>Online Grocery Shopping</a>
+                    <a>Daraz Exclusive</a>
+                </div>
+
+
+
+              
+            
+                <!-- Footer Panel 3 -->
+                <div class="foot-section3">
+                    <div class="footarea1-s3">
+                        <h4>Daraz International</h4>
+                        <div class="countries-footer">
+                            <div class="country-section">
+                                <div class="country-image" id="pakistan"></div>
+                                <a>Pakistan</a>
+                            </div>
+                            <div class="country-section">
+                                <div class="country-image" id="bangladesh"></div>
+                                <a>Bangladesh</a>
+                            </div>
+                            <div class="country-section">
+                                <div class="country-image" id="sri-lanka"></div>
+                                <a>Sri Lanka</a>
+                            </div>
+                            <div class="country-section">
+                                <div class="country-image" id="myanmar"></div>
+                                <a>Myanmar</a>
+                            </div>
+                            <div class="country-section">
+                                <div class="country-image" id="nepal"></div>
+                                <a>Nepal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footarea2-s3">
+                        <h4>Payment Methods</h4>
+                        <div class="payment-method">
+                            <img src="{% static 'images/Footer/Payment Methods/Cash on Delivery.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/Visa.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/MasterCard.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/EasyPaisa.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/HBL.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/Union Pay.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/Easy Monthly Installements.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/Daraz Wallet.png' %}" width="50">
+                            <img src="{% static 'images/Footer/Payment Methods/JazzCash.png' %}" width="50">
+                        </div>
+                    </div>
+                    <div class="footarea3-s3">
+                        <h4>Verified by</h4>
+                        <img src="images/Footer/Payment Methods/Verified by.png" width="100">
+                    </div>
+                </div>
+                <!-- Footer Panel 4 -->
+                <div class="foot-section4">
+                    <div class="exclusive-deals">
+                        <h4>Exclusive Deals and Offers!</h4>
+                        
+                <!-- Update image src with static tag -->
+                <img src="{% static 'images/Footer/QR Code.png' %}" width="220">
+                <!-- Other footer content -->
+                <img src="{% static 'images/Footer/Daraz-Happy-Shopping.png '%}" id="daraz-shopping" width="220">
+            </div>
+            <div class="follow-panel">
+                <h4>Follow Us</h4>
+                <img src="{% static 'images/Footer/Socials/footer-socials.png'%}" width="220">
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</body>
+</html>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+{% load static %} 
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Your existing hero section -->
+    <div class="hero-section">
+        <!-- Slider and hero tag content -->
+    </div>
+
+    <!-- Category Section -->
+    <div class="all-categories">
+        <!-- Dynamic category content -->
+         <!-- Category Section -->
+<div class="all-categories">
+    {% for category in categories %}
+        <div class="category">
+            <img src="{{ category.image }}" alt="{{ category.name }}">
+            <h3>{{ category.name }}</h3>
+        </div>
+    {% empty %}
+        <p>No categories available.</p>
+    {% endfor %}
+</div> 
+    </div>
+
+    <!-- For You Section -->
+    <div class="for-you">
+        <!-- Dynamic product content -->
+         <!-- For You Section (Products) -->
+<div class="for-you">
+    {% for product in products %}
+        <div class="product">
+            <img src="{{ product.image }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <p>Price: ${{ product.price }}</p>
+            {% if product.discount %}
+                <p>Discount: {{ product.discount }}%</p>
+            {% endif %}
+        </div>
+    {% empty %}
+        <p>No products available.</p>
+    {% endfor %}
+</div>
+    </div>
+{% endblock %} 
+
+
+
