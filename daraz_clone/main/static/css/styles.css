@@ -14,7 +14,6 @@ body {
     height: 90px;
     background-color: rgb(248, 86, 6);
     color:white;
-    height: 150px;
 }
 
 .nav-top-info {
@@ -231,6 +230,66 @@ body {
     background-color: rgb(185, 66, 6);
 }
 
+/* Hero Section
+.hero-section {
+    display: flex;
+    position: relative;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px 100px 0px 100px;
+    width: 1000px;
+    height: 600px;
+
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+} */
+
 /* Hero Section */
 .hero-section {
     display: flex;
@@ -239,8 +298,6 @@ body {
     background-size: cover;
     justify-content: center;
     align-items: flex-end;
-    padding: 50px;
-    
 }
 
 #slider {
@@ -535,6 +592,27 @@ body {
 #nepal {
     background-image: url("images/Footer/Countries Flag/nepal.png");
 }
+
+/* #pakistan {
+    background-image: url("/static/images/Footer/Countries-Flag/Pakistan.png");
+}
+
+#bangladesh {
+    background-image: url("/static/images/Footer/Countries-Flag/Bangladesh.png");
+}
+
+#sri-lanka {
+    background-image: url("/static/images/Footer/Countries-Flag/Sri-Lanka.png");
+}
+
+#myanmar {
+    background-image: url("/static/images/Footer/Countries-Flag/Myanmar.png");
+}
+
+#nepal {
+    background-image: url("/static/images/Footer/Countries-Flag/Nepal.png");
+} */
+
 
 .country-image {
     width:25px;
