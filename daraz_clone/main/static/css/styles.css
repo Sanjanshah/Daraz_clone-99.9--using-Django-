@@ -230,70 +230,12 @@ body {
     background-color: rgb(185, 66, 6);
 }
 
-/* Hero Section
-.hero-section {
-    display: flex;
-    position: relative;
-    background-size: cover;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0px 100px 0px 100px;
-    width: 1000px;
-    height: 600px;
 
-}
-
-#slider {
-    overflow: hidden;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-
-#slider figure img {
-    float: left;
-    width: 20%;
-}
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
-} */
 
 /* Hero Section */
 .hero-section {
     display: flex;
-    height:528px;
+    height: 528px;
     position: relative;
     background-size: cover;
     justify-content: center;
@@ -347,212 +289,77 @@ body {
     }
 }
 
-/* Hero Tag */
-.hero-tag {
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(255, 219, 201);
-    opacity: 0.7;
-    width: 65%;
-    height: 40px;
-    font-size: 0.9rem;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition-property: all;
-    transition-duration: 200ms;
-    transition-delay: 100ms;
-    transition-timing-function:ease-in-out;
-}
 
-.hero-tag:hover {
-    opacity: 1;
-    scale: 1.01;
-}
-
-.main-hr {
-    color:rgb(160, 160, 160);
-}
-
-.hero-tag-ele {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero-tag-ele span {
-    margin-left: 5px;
-}
-
-/* Categories Section */
-.all-categories {
-    margin-top: 30px;
-    margin-right: 9.1%;
-    margin-left: 9.1%;
-}
-
-.main-text {
-    margin-bottom: 0.8rem;
-}
-
-.category-first-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.category-second-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.categories {
-    display:flex;
-    flex-direction : column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-    width: 145px;
-    height: 145px;
-    margin:5px;
-    padding: 10px;
-}
-
-.item:hover {
-    filter: drop-shadow(0 0 0.25rem rgb(187, 187, 187));
-}
-
-.categories .category-text {
-    text-align: center;
-}
-
-#category-wardrobe {
-    background-image: url("images/Categories/Wardrobe.png");
-    margin-left: 8px;
-}
-
-#category-moisturizers {
-    background-image: url("images/Categories/Moisturizers.jpg");
-}
-
-#category-shampoo {
-    background-image: url("images/Categories/shampoo.png");
-    margin-left: 30px;
-}
-
-#category-kitchen-tools {
-    background-image: url("images/Categories/Kitchen Tools.png");
-    margin-left: 5px;
-}
-
-#category-art-easels {
-    background-image: url("images/Categories/Art Easels.jpg");
-}
-
-#category-smart-watches {
-    background-image: url("images/Categories/smartwatch.png");
-}
-
-#category-tshirts {
-    background-image: url("images/Categories/t-shirt.png");
-}
-
-#category-fashion {
-    background-image: url("images/Categories/fashion.png");
-    margin-left: 15px;
-}
-
-#category-business {
-    background-image: url("images/Categories/Business.png");
-}
-
-#category-suits {
-    background-image: url("images/Categories/Suits.png");
-    margin-left: 30px;
-}
-
-#category-space-savers {
-    background-image: url("images/Categories/Space Saver.webp");
-}
-
-#category-headphones {
-    background-image: url("images/Categories/headphones.png");
-}
-
-#category-wallpaper {
-    background-image: url("images/Categories/Wallpapers.jpg");
-}
-
-#category-bottles {
-    background-image: url("images/Categories/Water Bottle.jpg");
-}
-
-#category-clips {
-    background-image: url("images/Categories/Clips.jpg");
-}
-
-#category-dispenser {
-    background-image: url("images/Categories/Dispenser.png");
-    margin-left: 25px;
-}
-
-.category-img {
-    width: 80px;
-    height:80px;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
-/* For You Section */
+/* Container for categories and products */
+.all-categories,
 .for-you {
-    margin-top: 50px;
-    margin-left: 9.1%;
-    margin-right: 9.1%;
-}
-
-.cards-row {
-    
     display: flex;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
-.item-card {
-    display: flex;
-    flex-direction: column;
-    margin-right: 1.5%;
-    margin-bottom: 25px;
-}
-.card-desc {
-    width: 190px;
-    padding: 10px;
-    background-color: white;
-}
-
-.product-name {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 0.9rem
+/* Card styles for category */
+.category {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.discount {
-    font-size: 0.75rem;
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.price-tag {
-    color: #f85606;
-    padding-top: 10px;
-    font-size: 1.25rem;
-    padding-bottom: 5px;
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
 }
 
-#discounted-price {
-    color: #9E9E9E;
-    text-decoration: line-through;
+/* Card styles for product */
+.product {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Optional: Additional styling for text elements */
+.category h3,
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    margin: 4px 0;
+    color: #666;
+}
+
 
 /* Footer */
 .mainfooter {

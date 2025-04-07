@@ -10,6 +10,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'price', 'old_price', 'discount', 'category',)
+    list_display = ('id', 'title', 'price', 'old_price', 'discount', 'category', 'image')
     list_filter = ('category',)
     search_fields = ('title',)

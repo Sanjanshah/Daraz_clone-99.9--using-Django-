@@ -13,3 +13,4 @@ def home(request):
         'products': products,
     }
     return render(request, 'main/index.html', context)
+

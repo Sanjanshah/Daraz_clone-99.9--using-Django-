@@ -13,10 +13,11 @@
     <div class="all-categories">
         <!-- Dynamic category content -->
          <!-- Category Section -->
+          <h2> all-categories </h2>
 <div class="all-categories">
     {% for category in categories %}
         <div class="category">
-            <img src="{{ category.image }}" alt="{{ category.name }}">
+            <img src="{{ category.image.url }}" alt="{{ category.name }}">
             <h3>{{ category.name }}</h3>
         </div>
     {% empty %}
@@ -32,7 +33,8 @@
 <div class="for-you">
     {% for product in products %}
         <div class="product">
-            <img src="{{ product.image }}" alt="{{ product.title }}">
+            {% comment %} <img src="{{ product.image }}" alt="{{ product.title }}"> {% endcomment %}
+            <img src="{{ product.image.url }}" alt="{{ product.title }}">
             <h3>{{ product.title }}</h3>
             <p>Price: ${{ product.price }}</p>
             {% if product.discount %}

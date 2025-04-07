@@ -1,4 +1,6 @@
-// Slider control
+
+
+alert// Slider control
 let currentSlide = 0;
 const slides = document.querySelectorAll('#slider figure img');
 
